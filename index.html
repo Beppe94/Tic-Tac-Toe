@@ -17,28 +17,36 @@
             </svg>
         </a>
     </div>
-    <div class="selection">
-        <h2>Select Opponent</h2>
-        <div class="buttons">
-            <button>Player 2</button>
-            <button>AI</button>
-            <select name="AI" id="ai">
-                <option value="easy">Easy</option>
-                <option value="intermediate">Intermediate</option>
-                <option value="impossible">Impossible</option>
-            </select>
+    <div class="main">
+        <div class="selection">
+            <div class="myForm">
+                <h2>Select Opponent</h2>
+                <form class="player-info">
+                    <label for="player1">PLayer 1</label>
+                    <input type="text" id="player1" placeholder="Player 1 name">
+
+                    <label for="player2">Player 2</label>
+                    <input type="text" id="player2" placeholder="Player 2 name">
+                    <button type="submit">Play</button>
+                </form>
+            </div> 
+            <div class="game-status">
+                <h3>Board</h3>
+            </div>
         </div>
-    </div>
-    <div class="board" id="board">
-        <div class="cell" data-cell>X</div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
+    
+        <div class="board" id="board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <button id="reset">Restart</button>
     </div>
 </body>
 </html>
