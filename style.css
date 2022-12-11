@@ -69,6 +69,12 @@ body {
     font-size: 25px;
     font-weight: 600;
     border: 2px solid black;
+    transition: .2s;
+    scale: .9;
+}
+
+.myForm button:hover {
+    scale: 1;
 }
 
 .myForm input {
@@ -139,6 +145,12 @@ body {
     border-radius: 10px;
     font-size: 20px;
     font-weight: 600;
-    height: 40px;
-    width: 120px;
+    height: 50px;
+    width: 130px;
+    scale: .9;
+    transition: .2s;
+}
+
+.main button:nth-child(3):hover {
+    scale: 1;
 }
