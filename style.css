@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --white: #fefefe;
+}
 
 *::before, *::after {
     box-sizing: border-box;
@@ -10,7 +13,7 @@ html {
 
 body {
     margin: 0;
-    background-color: #c471ed;
+    background-color: #c56fdf;
 }
 
 .header {
@@ -30,7 +33,7 @@ body {
 }
 
 .header a {
-    color: white;
+    color: var(--white);
     border-radius: 25px;
 }
 
@@ -60,11 +63,12 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-weight: 600;
 }
 
 .myForm button {
     height: 50px;
-    width: 120px;
+    width: 110px;
     border-radius: 10px;
     font-size: 25px;
     font-weight: 600;
@@ -78,9 +82,10 @@ body {
 }
 
 .myForm input {
-    border-radius: 5px;
+    border-radius: 10px;
     height: 25px;
     width: 150px;
+    border: 2px solid black;
 }
 
 @media screen and (max-width: 630px) {
@@ -103,7 +108,7 @@ body {
 
 .hidden {
     scale: 0;
-    transition: .3s;
+    transition: .5s;
 }
 
 .game-status {
@@ -114,7 +119,7 @@ body {
     align-items: center;
     font-size: 25px;
     border: 2px solid black;
-    background-color: darkgray;
+    background-color: var(--white);
     width: 200px;
     height: 50px;
     font-weight: 500;
@@ -125,19 +130,22 @@ body {
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(3, auto);
-    gap: 5px;
+    gap: 10px;
 }
 
 .cell {
+    color: var(--white);
+    font-weight: 700;
     border: 2px solid black;
     width: 100px;
     height: 100px;
-    background-color: blueviolet;
-    border-radius: 5px;
+    background-color: rgb(115, 39, 187);
+    border-radius: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
+    box-shadow: 0 0 10px 0 black;
 }
 
 .main button:nth-child(3){
@@ -149,6 +157,7 @@ body {
     width: 130px;
     scale: .9;
     transition: .2s;
+    border: 2px solid black;
 }
 
 .main button:nth-child(3):hover {
